@@ -10,7 +10,7 @@ function standings(){const m={};S.players.forEach(p=>m[p.name]={n:p.name,p:0,w:0
   if(r=='p1'){a.w++;b.l++}else if(r=='p2'){b.w++;a.l++}else return;a.p++;b.p++});
  return Object.values(m).sort((x,y)=>y.w-x.w||x.l-y.l||x.n.localeCompare(y.n))}
 function render(){const s=S.settings;
- $('mail').textContent=CONTACT_EMAIL;$('reg').href='mailto:'+CONTACT_EMAIL+'?subject=Badminton%20Tournament%20Registration';$('maps').href=MAPS_URL;
+ $('maps').href=MAPS_URL;
  if(s.format)$('format').textContent=s.format;$('when').textContent=[s.eventDate,s.time].filter(Boolean).join(' · ')||'Dates to be announced';
  $('champ').hidden=!s.winner;if(s.winner){$('cn').textContent=s.winner;$('rn').textContent=s.runnerUp?'Runner-up: '+s.runnerUp:''}
  $('pc').textContent=S.players.length?'('+S.players.length+')':'';
