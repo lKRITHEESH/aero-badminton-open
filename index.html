@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aerospace Badminton Tournament</title>
+<meta name="description" content="Aerospace Badminton Tournament: players, matches and live standings.">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,700;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1"></head><body>
+<nav class="top"><a href="#players">+ Players</a><a href="#matches">+ Matches</a><a href="#standings">+ Standings</a><a href="#venue">+ Venue</a><a href="https://lkritheesh.github.io/aero-sports-hub/">+ All Games</a></nav>
+<header class="hero"><div class="wrap hero-in">
+ <div><div class="logo">🏸 AERO GAMES<br>ORGANISATION</div>
+ <h1><span>Aerospace</span>Badminton<br>Tournament</h1>
+ <p class="lead">A friendly knockout for 3rd Year Aerospace Engineering. Grab a racket, pick your court time and smash your way up the table.</p>
+ <div class="contact"><small>REGISTRATION AND CONTACT</small><b id="mail"></b><a class="btn" id="reg" href="#">Register interest</a></div></div>
+ <img class="poster" src="poster.jpg" alt="Aerospace Badminton Tournament poster"></div></header>
+<main class="wrap">
+ <section class="boxes">
+  <div class="box"><h3>Venue</h3><p>Synthetic Badminton Court, <b>Behind Vasistha</b></p></div>
+  <div class="box"><h3>Format</h3><p id="format">Knockout rounds, best of 3 games</p></div>
+  <div class="box"><h3>When</h3><p id="when">Dates to be announced</p></div>
+ </section>
+ <section class="champ" id="champ" hidden><div class="trophy">🏆</div><div><small>CHAMPION</small><div class="cn" id="cn"></div><div id="rn"></div></div></section>
+</main>
+<div class="band"><div class="wrap"><b>Smash.</b> Rally. Win.</div></div>
+<main class="wrap">
+ <section class="sec"><h2><small>THE FIELD</small>Players <span id="pc"></span></h2><input id="q" type="search" placeholder="Search player…"><div id="players" class="players"></div></section>
+ <section class="sec" id="matches"><h2><small>WHO PLAYS WHOM</small>Matches</h2><select id="rf"><option value="all">All rounds</option></select><div id="list" class="list"></div></section>
+ <section class="sec" id="standings"><h2><small>CURRENT TABLE</small>Standings</h2><div class="tw"><table><thead><tr><th>#</th><th>Player</th><th>Played</th><th>W</th><th>L</th><th>Pts</th></tr></thead><tbody id="st"></tbody></table></div></section>
+ <section class="sec"><h2><small>OVERVIEW</small>Your tournament at a glance</h2><ul class="arrows">
+  <li><a href="#players">» Players</a><span>Everyone who has registered</span></li><li><a href="#matches">» Matches</a><span>Rounds, courts and scores</span></li>
+  <li><a href="#standings">» Standings</a><span>Updated live from the sheet</span></li><li><a href="#venue">» Venue</a><span>Where to find the court</span></li></ul></section>
+</main>
+<section class="map" id="venue"><div class="wrap"><div class="pin">📍</div><p>Synthetic Badminton Court, Behind Vasistha</p><a class="btn ghost" id="maps" href="#" target="_blank" rel="noopener">Find us</a></div></section>
+<footer><div class="wrap"><span>ORGANIZER: AERO GAMES ORGANISATION</span><span>BADMINTON SUPPORT COORDINATOR: VISWANATH K</span><span id="up">Loading…</span></div></footer>
+<script src="config.js"></script><script src="app.js?v=1"></script></body></html>
