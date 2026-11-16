@@ -10,6 +10,6 @@
 */
 const SHEET_ID = "1qPVsGHSQphinLdd4ydsIY9ovki3zz8sSppwHfnhz3fY";
 const SHEET_TABS = { settings: "Settings", players: "Players", matches: "Matches" };
-const CONTACT_EMAIL = "businesschime1@gmail.com";
+const CONTACT_EMAIL = "";
 const MAPS_URL = "https://www.google.com/maps/search/?api=1&query=Synthetic+Badminton+Court+Behind+Vasistha";
 const REFRESH_MS = 30000;
